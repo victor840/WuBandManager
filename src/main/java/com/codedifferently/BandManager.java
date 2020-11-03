@@ -26,6 +26,11 @@ public class BandManager {
 
     public String forLoop() {
         String result = "";
+        for(int i = 0; i < wuMemberArray.length; i++){
+
+            result += wuMemberArray[i].toString();
+
+        }
         // identify initial value
         // identify terminal condition
         // identify increment
