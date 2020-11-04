@@ -9,16 +9,18 @@ public class BandManager {
     }
 
     public String whileLoop() {
+        String currentPerson = "";
         String result = "";
-        // create a `counter`
-        // while `counter` is less than length of array
-            // begin loop
+        int counter = 0; // create a `counter
+        while(counter < wuMemberArray.length)// while `counter` is less than length of array
+        {   // begin loop
+            // use `counter` to identify the `current Person` in the array
+            result += wuMemberArray[counter].toString();
+            counter++;
+            // get `string Representation` of `currentPerson`
+            // append `stringRepresentation` to `result` variable
 
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
-
-            // end loop
+        }// end loop
         return result;
     }
 
@@ -49,6 +51,10 @@ public class BandManager {
 
     public String forEachLoop() {
         String result = "";
+
+        for(WuMember wuMember : wuMemberArray){
+            result += wuMember.toString();
+        }
         // identify array's type
         // identify array's variable-name
 
